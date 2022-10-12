@@ -7,11 +7,13 @@ type CartContextType = {
   setCart: React.Dispatch<React.SetStateAction<number>>
 };
 
+type Props = {
+  children: React.ReactNode,
+};
+
 export const CartContext = React.createContext({} as CartContextType);
 
-export const CartContextProvider:
-React.FC<React.PropsWithChildren<React.ReactNode>>
-= ({ children }) => {
+export const CartContextProvider: React.FC<Props> = ({ children }) => {
   const parsedStorage = parseStorage('CartItems');
   const amount = parsedStorage.reduce(
     (a: number, b: StorageItem) => a + b.quantity, 0,

@@ -6,10 +6,14 @@ type FavContextType = {
   setFav: React.Dispatch<React.SetStateAction<number>>
 };
 
+type Props = {
+  children: React.ReactNode,
+}
+
 export const FavContext = React.createContext({} as FavContextType);
 
 export const FavContextProvider:
-React.FC<React.PropsWithChildren<React.ReactNode>>
+React.FC<Props>
 = ({ children }) => {
   const parsedStorage = parseStorage('FavItems');
   const amount = parsedStorage.length;

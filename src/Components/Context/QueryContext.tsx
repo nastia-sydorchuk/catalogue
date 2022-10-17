@@ -11,9 +11,7 @@ type Props = {
 
 export const QueryContext = React.createContext({} as QueryContextType);
 
-export const QueryContextProvider:
-React.FC<Props>
-= ({ children }) => {
+export const QueryContextProvider: React.FC<Props> = ({ children }) => {
   const [query, setQuery] = useState<string>('');
   const contextValue = useMemo(() => ({ query, setQuery }), [query]);
 

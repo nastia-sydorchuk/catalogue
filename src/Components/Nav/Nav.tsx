@@ -13,6 +13,7 @@ export const Nav = () => (
             return classNames('link', { 'link--active': isActive });
           }}
           key={link}
+          end
         >
           <li className="Nav__item">
             {name}

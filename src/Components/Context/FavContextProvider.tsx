@@ -12,9 +12,7 @@ type Props = {
 
 export const FavContext = React.createContext({} as FavContextType);
 
-export const FavContextProvider:
-React.FC<Props>
-= ({ children }) => {
+export const FavContextProvider: React.FC<Props> = ({ children }) => {
   const parsedStorage = parseStorage('FavItems');
   const amount = parsedStorage.length;
   const [fav, setFav] = useState<number>(amount);

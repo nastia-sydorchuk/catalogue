@@ -70,7 +70,6 @@ export const HomePage = () => {
                 <p className="body-text body-text--light">{`${amount} models`}</p>
               </div>
             ))}
-
           </div>
         </div>
 

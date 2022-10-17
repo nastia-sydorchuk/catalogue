@@ -1,5 +1,12 @@
+@import '../../Helpers/utils';
+
 .Logo {
   display: block;
   width: 40px;
   height: 11px;
+  @extend %transition;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

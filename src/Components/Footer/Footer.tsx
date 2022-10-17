@@ -24,9 +24,22 @@ export const Footer = () => {
           <Logo />
 
           <div className="Footer__socials">
-            <Link to="/" className="link Footer__link">GitHub</Link>
-            <Link to="/" className="link Footer__link">Contacts</Link>
-            <Link to="/" className="link Footer__link">Rights</Link>
+            <a
+              href="https://github.com/nastia-sydorchuk/catalogue"
+              className="link Footer__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anastasiia-sydorchuk-08b8b4124/"
+              className="link Footer__link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
           </div>
           <div
             className={classNames(

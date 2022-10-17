@@ -1,3 +1,14 @@
+@import '../../Helpers/utils';
+
 .NotFoundPage {
   padding: 100px 0;
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-bottom: 5px;
+  }
 }

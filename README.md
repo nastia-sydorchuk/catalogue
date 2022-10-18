@@ -1,6 +1,6 @@
-# Phones catalogue
+# Catalogue
 
-  Interactive page created using functional components, React Hooks, Fetch, URLSearchParams, localStorage.
+  Interactive website created using functional components, React Hooks, Fetch, URLSearchParams, localStorage.
   Implemented sorting, filtering, search, custom select dropdown, sliders, breadcrumbs.
 
   Technologies: React, React Router (v6), Typescript, Sass (SCSS), BEM.
